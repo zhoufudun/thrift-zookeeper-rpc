@@ -11,7 +11,7 @@ import org.apache.thrift.transport.TTransport;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import cn.slimsmart.thrift.rpc.ThriftServiceClientProxyFactory;
+import cn.slimsmart.thrift.rpc.client.ThriftServiceClientProxyFactory;
 
 //客户端调用
 @SuppressWarnings("resource")
