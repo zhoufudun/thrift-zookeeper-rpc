@@ -85,9 +85,14 @@ public class ZookeeperFactory implements FactoryBean<CuratorFramework> ,Closeabl
 
 	public static CuratorFramework create(String connectString, int sessionTimeout, int connectionTimeout, String namespace) {
 		CuratorFrameworkFactory.Builder builder = CuratorFrameworkFactory.builder();
-		return builder.connectString(connectString).sessionTimeoutMs(sessionTimeout).connectionTimeoutMs(30000)
-				.canBeReadOnly(true).namespace(namespace).retryPolicy(new ExponentialBackoffRetry(1000, Integer.MAX_VALUE))
-				.defaultData(null).build();
+		return builder.connectString(connectString)
+				.sessionTimeoutMs(sessionTimeout)
+				.connectionTimeoutMs(connectionTimeout)
+				.canBeReadOnly(true)
+				.namespace(namespace)
+				.retryPolicy(new ExponentialBackoffRetry(1000, Integer.MAX_VALUE))
+				.defaultData(null)
+				.build();
 	}
 
 	public void close() {

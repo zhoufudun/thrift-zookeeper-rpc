@@ -268,7 +268,9 @@ public class EchoSerivce {
 
         public String msg; // required
 
-        /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+        /**
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+         */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             MSG((short) 1, "msg");
 
@@ -340,8 +342,7 @@ public class EchoSerivce {
         public echo_args() {
         }
 
-        public echo_args(
-                String msg) {
+        public echo_args(String msg) {
             this();
             this.msg = msg;
         }
@@ -377,7 +378,9 @@ public class EchoSerivce {
             this.msg = null;
         }
 
-        /** Returns true if field msg is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field msg is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetMsg() {
             return this.msg != null;
         }
@@ -410,7 +413,9 @@ public class EchoSerivce {
             throw new IllegalStateException();
         }
 
-        /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+         */
         public boolean isSet(_Fields field) {
             if (field == null) {
                 throw new IllegalArgumentException();
@@ -629,7 +634,9 @@ public class EchoSerivce {
 
         public String success; // required
 
-        /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+        /**
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+         */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success");
 
@@ -738,7 +745,9 @@ public class EchoSerivce {
             this.success = null;
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return this.success != null;
         }
@@ -771,7 +780,9 @@ public class EchoSerivce {
             throw new IllegalStateException();
         }
 
-        /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+         */
         public boolean isSet(_Fields field) {
             if (field == null) {
                 throw new IllegalArgumentException();
